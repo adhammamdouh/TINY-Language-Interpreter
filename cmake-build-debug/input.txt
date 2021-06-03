@@ -1,0 +1,47 @@
+{ Sample program
+  in TINY language
+}
+
+int regularInt;                             { initialize variable "regularInt" of type Int }
+{ int regularInt; }                         { this will fail if uncommented "ERROR the variable declared before" }
+bool regularBool;                           { initialize variable "regularBool" of type Bool }
+real regularReal;                           { initialize variable "regularReal" of type Real }
+int ctr;                                    { initialize variable "ctr" }
+int result;                                 { increase result by 1 }
+int sum;                                    { initialize variable "sum" of type Int }
+int sub;                                    { initialize variable "sub" of type Int }
+real mult;                                  { initialize variable "mult" of type real }
+real divide;                                { initialize variable "divide" of type real }
+
+regularInt := 5;                            { set 5 to regularInt }
+regularBool := false;                       { set false to regularBool }
+regularReal := 6.5;                         { set 6.5 to regularReal }
+sum := 10 + 50;                             { set (10 + 50 ) to sum }
+sub := regularInt - 4;                      { set (regularInt - 4) to sub }
+mult := ( 2.0 * regularReal ) * 10.6;       { set (( 2.0 * regularReal ) * 10.6) to mult }
+divide := regularReal / 2.0;                { set (regularReal / 2.0) to divide }
+
+write regularInt;                           { print regularInt "this will print Val: 5" }
+write regularBool;                          { print regularBool "this will print Val: 0" }
+write regularReal;                          { print regularReal "this will print Val: 6.5" }
+write sum;                                  { print sum "this will print Val: 60" }
+write sub;                                  { print sub "this will print Val: 1" }
+write mult;                                 { print mult "this will print Val: 137.8" }
+write divide;                               { print divide "this will print Val: 3.25" }
+
+{ write regularInt + regularReal; }         { this will fail if uncommented "operation among different data types" }
+{ write regularInt + regularBool; }         { this will fail if uncommented "operation among different data types" }
+{ write regularReal + regularBool; }        { this will fail if uncommented "operation among different data types" }
+
+{ int regularInt; }                         { this will fail if uncommented "you must declare your variables at the beginning of the program" }
+{ undeclaredVariable := 12; }               { this will fail if uncommented "ERROR VARIABLES must be declared before use!" }
+
+ctr := 10;                                  { set 10 to ctr }
+if 0<ctr then                               { compute only if ctr>=1 }
+  result := ctr;                            { set result = ctr }
+  repeat                                    { start repeat statement }
+    result := result + 1;                   { increase result by 1 }
+    write result;                           { write result "this will print Values from 11 to 20" }
+    ctr:=ctr-1                              { decrease ctr by 1 }
+  until ctr=0                               { end repeat }
+end                                         { end program }

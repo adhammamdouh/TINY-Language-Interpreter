@@ -1,0 +1,3 @@
+D:/GItHub/Interpreter/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/GItHub/Interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir
+D:/GItHub/Interpreter/cmake-build-debug/CMakeFiles/edit_cache.dir
